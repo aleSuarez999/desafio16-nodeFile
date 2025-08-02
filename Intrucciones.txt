@@ -1,0 +1,45 @@
+Se necesita desarrollar una aplicación para gestionar archivos de texto. El sistema debe permitir la creación, eliminación y modificación de archivos. Para ello, se desea implementar una aplicación de línea de comandos que utilice Node.js.
+
+La aplicación debe permitir que el usuario ingrese por consola el nombre del archivo que desea crear, eliminar o modificar. Además, el usuario debe poder ingresar el contenido del archivo en caso de que desee crear o modificar el archivo.
+
+La aplicación debe mostrar un mensaje de confirmación cuando se haya completado la operación sobre el archivo.
+
+Para la implementación de esta aplicación se requiere el uso de los siguientes temas:
+
+Global process: para recibir los argumentos que el usuario ingrese por consola.
+Módulo fs: para crear, leer, modificar y eliminar archivos de texto.
+
+Datos de entrada:
+
+* Nombre del archivo (cadena de caracteres).
+* Contenido del archivo (cadena de caracteres) (solo para creación y modificación).
+
+Datos de salida:
+
+* Mensaje de confirmación (cadena de caracteres).
+
+Requerimientos funcionales:
+
+* Crear un archivo de texto con el nombre especificado.
+* Leer el contenido de un archivo de texto con el nombre especificado.
+* Modificar el contenido de un archivo de texto con el nombre especificado.
+* Eliminar un archivo de texto con el nombre especificado.
+
+Requerimientos no funcionales:
+
+* La aplicación debe ser desarrollada en Node.js.
+* La aplicación debe ser una aplicación de línea de comandos.
+* La aplicación debe utilizar el módulo fs de Node.js para interactuar con los archivos de texto.
+* La aplicación debe recibir los argumentos del usuario por consola utilizando el objeto Global process de Node.js.
+
+Pasos a realizar para resolver el ejercicio:
+
+1.Crear un archivo index.js que importe el módulo fs de Node.js.
+2.Utilizar el objeto Global process de Node.js para recibir los argumentos ingresados por el usuario por consola.
+3.Crear una función para cada uno de los requerimientos funcionales:
+	a.Crear un archivo de texto con el nombre especificado.
+	b.Leer el contenido de un archivo de texto con el nombre especificado.
+	c.Modificar el contenido de un archivo de texto con el nombre especificado.
+	d.Eliminar un archivo de texto con el nombre especificado.
+4.Utilizar un switch-case para llamar a la función correspondiente según el argumento ingresado por el usuario.
+5.En cada función, utilizar el módulo fs de Node.js para interactuar con los archivos de texto y mostrar un mensaje de confirmación.
